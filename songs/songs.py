@@ -72,6 +72,6 @@ if __name__ == '__main__':
         }
     )
     cherrypy.server.socket_port = 8083
-    cherrypy.server.httpserver = 'kafkaserver.cloudapp.net'
+    cherrypy.server.socket_host = 'localhost'
     cherrypy.engine.start()
     cherrypy.engine.block()
