@@ -1,14 +1,18 @@
 import cherrypy
+import configparser
 from KafkaRestServer.MySQLDB import dbConnector
+import logging
 
 
-class Songs:
+class Words:
+
+
 
     exposed = True
 
-
     def GET(self):
-        db = dbConnector('test','test','localhost','MessageStore')
+
+        db = dbConnector()
         words = db.getWordCounts()
 
         output = []
@@ -18,19 +22,23 @@ class Songs:
         return (', '.join(output))
 
 
-
-
-
 if __name__ == '__main__':
 
     cherrypy.tree.mount(
-        Songs(), '/api/songs',
+        Words(), '/api/words',
         {'/':
             {'request.dispatch': cherrypy.dispatch.MethodDispatcher()}
         }
     )
-    cherrypy.server.socket_port = 8083
+
+
+    config = configparser.ConfigParser()
+    config.read('application.ini')
+    env = config['environment']['env']
+
+    cherrypy.server.socket_port = int(config[env]['port'])
     #cherrypy.server.httpserver = 'kafkaserver.cloudapp.net'
-    cherrypy.server.socket_host = 'localhost'
+    cherrypy.server.socket_host = config[env]['host']
+
     cherrypy.engine.start()
     cherrypy.engine.block()
