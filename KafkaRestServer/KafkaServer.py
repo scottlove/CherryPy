@@ -1,6 +1,7 @@
 import cherrypy
 import configparser
 from KafkaRestServer.MySQLDB import dbConnector
+import json
 import logging
 
 
@@ -9,7 +10,7 @@ class Words:
 
 
     exposed = True
-
+    #cherrypy.tools.json_out()
     def GET(self):
 
         db = dbConnector()
@@ -19,7 +20,8 @@ class Words:
         for k in words.keys():
             output.append(k + ':' +str(words[k]))
 
-        return (', '.join(output))
+        # return (', '.join(output))
+        return(json.dumps(words))
 
 
 if __name__ == '__main__':
