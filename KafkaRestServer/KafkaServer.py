@@ -4,10 +4,13 @@ from KafkaRestServer.MySQLDB import dbConnector
 import json
 import logging
 
-class wordCount:
+class wordCount():
     def __init__(self,word,count):
             self.name =word
             self.count= count;
+
+
+
 
 
 
@@ -23,13 +26,14 @@ class Words:
 
         output = []
         for k in words.keys():
-            output.append(k + ':' +str(words[k]))
+            wo = {'word':k,'count':words[k]}
+            output.append(wo);
 
         # return (', '.join(output))
         cherrypy.response.headers["Access-Control-Allow-Origin"] = "*";
-        i = wordCount("test",1)
-        # return(json.dumps(words))
-        return(i)
+
+        return(json.dumps(output))
+
 
 def CORS():
     cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
