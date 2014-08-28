@@ -5,21 +5,14 @@ import logging
 
 class dbConnector:
 
-    def __init__(self):
-        self.readConfig()
+    def __init__(self,config):
 
-
-    def readConfig(self):
-        config = configparser.ConfigParser()
-        config.read('application.ini')
-
-        env = config['environment']['env']
-
-        self.user = config[env]['username']
-        self.password = config[env]['password']
-        self.host = config[env]['host']
-        self.database = config[env]['database']
-        self.selectQuery = config[env]['query']
+        self.env = config['environment']['env']
+        self.selectQuery = config[self.env]['query']
+        self.database = config[self.env]['database']
+        self.host = config[self.env]['host']
+        self.password = config[self.env]['password']
+        self.user = config[self.env]['username']
 
 
 
@@ -42,13 +35,6 @@ class dbConnector:
         return words
 
 
-db = dbConnector()
-words = db.getWordCounts()
 
-output = []
-for k in words.keys():
-    output.append(k + ':' +str(words[k]))
-
-print (', '.join(output))
 
 

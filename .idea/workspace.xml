@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27476346-1a58-4429-ac9a-970183c881d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CherryPy.iml" afterPath="$PROJECT_DIR$/.idea/CherryPy.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/test_dbConnector.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KafkaRestServer/KafkaServer.py" afterPath="$PROJECT_DIR$/KafkaRestServer/KafkaServer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KafkaRestServer/MySQLDB.py" afterPath="$PROJECT_DIR$/KafkaRestServer/MySQLDB.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CherryPy.iws" />
@@ -16,11 +18,15 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CherryPy$KafkaServer.coverage" NAME="KafkaServer Coverage Results" MODIFIED="1403029138778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KafkaRestServer" />
+    <SUITE FILE_PATH="coverage/CherryPy$Unittests_in_test_dbConnector.coverage" NAME="Unittests in test_dbConnector Coverage Results" MODIFIED="1409268072520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/CherryPy$KafkaServer.coverage" NAME="KafkaServer Coverage Results" MODIFIED="1403639198773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KafkaRestServer" />
     <SUITE FILE_PATH="coverage/CherryPy$test.coverage" NAME="test Coverage Results" MODIFIED="1400813818439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KafkaRestServer" />
+    <SUITE FILE_PATH="coverage/CherryPy$Unittest_TestDbConnector_test_getConnectionString.coverage" NAME="Unittest TestDbConnector.test_getConnectionString Coverage Results" MODIFIED="1409267905829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/CherryPy$Unittest_TestDbConnector_test_getWordCounts.coverage" NAME="Unittest TestDbConnector.test_getWordCounts Coverage Results" MODIFIED="1409267061200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
     <SUITE FILE_PATH="coverage/CherryPy$MySQLDB.coverage" NAME="MySQLDB Coverage Results" MODIFIED="1400814835085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KafkaRestServer" />
-    <SUITE FILE_PATH="coverage/CherryPy$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1400800429971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CherryPy$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1400814030132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KafkaRestServer" />
+    <SUITE FILE_PATH="coverage/CherryPy$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1400800429971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CherryPy$Unittest_TestDbConnector_test_readConfig.coverage" NAME="Unittest TestDbConnector.test_readConfig Coverage Results" MODIFIED="1409267747070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
     <SUITE FILE_PATH="coverage/CherryPy$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1400644578535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CherryPy$songs.coverage" NAME="songs Coverage Results" MODIFIED="1400801022026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/songs" />
   </component>
@@ -35,53 +41,7 @@
     <favorites_list name="CherryPy" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="HelloWorld.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelloWorld.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="107" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLDB.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.ini" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="songs.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/songs/songs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaServer.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.4022005" vertical-offset="62" max-vertical-offset="1122">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -105,9 +65,11 @@
         <option value="$PROJECT_DIR$/KafkaRestServer/test.py" />
         <option value="$PROJECT_DIR$/KafkaRestServer/test2.py" />
         <option value="$PROJECT_DIR$/application.ini" />
-        <option value="$PROJECT_DIR$/KafkaRestServer/MySQLDB.py" />
         <option value="$PROJECT_DIR$/KafkaRestServer/application.ini" />
+        <option value="$PROJECT_DIR$/Tests/MySQLDB_test.py" />
         <option value="$PROJECT_DIR$/KafkaRestServer/KafkaServer.py" />
+        <option value="$PROJECT_DIR$/KafkaRestServer/MySQLDB.py" />
+        <option value="$PROJECT_DIR$/Tests/test_dbConnector.py" />
       </list>
     </option>
   </component>
@@ -162,7 +124,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,20 +166,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CherryPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CherryPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="KafkaRestServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="last_opened_file_path" value="C:/Anaconda/python.exe" />
+    <property name="options.lastSelected" value="coverage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tests" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -228,57 +204,16 @@
       <console-settings />
     </option>
   </component>
+  <component name="PyCoverageOptionsProvider">
+    <option name="myUseBundledCoveragePy" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Scott\PycharmProjects\CherryPy" />
       <recent name="C:\Users\scotlov\Documents\GitHub\CherryPy\KafkaRestServer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.KafkaServer">
-    <configuration default="false" name="songs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/songs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CherryPy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/songs/songs.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonCover" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonCover" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MySQLDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KafkaRestServer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CherryPy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KafkaRestServer/MySQLDB.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in test_dbConnector">
     <configuration default="false" name="KafkaServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,43 +235,111 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Unittest TestDbConnector.test_readConfig" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KafkaRestServer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CherryPy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KafkaRestServer/test.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KafkaRestServer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CherryPy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KafkaRestServer/test2.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/test_dbConnector.py" />
+      <option name="CLASS_NAME" value="TestDbConnector" />
+      <option name="METHOD_NAME" value="test_readConfig" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestDbConnector.test_getWordCounts" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CherryPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/test_dbConnector.py" />
+      <option name="CLASS_NAME" value="TestDbConnector" />
+      <option name="METHOD_NAME" value="test_getWordCounts" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestDbConnector.test_getConnectionString" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CherryPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/test_dbConnector.py" />
+      <option name="CLASS_NAME" value="TestDbConnector" />
+      <option name="METHOD_NAME" value="test_getConnectionString" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_dbConnector" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CherryPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/test_dbConnector.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonCover" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonCover" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -424,9 +427,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -448,6 +448,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -513,19 +516,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.mysql" />
-      <item index="1" class="java.lang.String" itemvalue="Python.songs" />
-      <item index="2" class="java.lang.String" itemvalue="Python.MySQLDB" />
-      <item index="3" class="java.lang.String" itemvalue="Python.KafkaServer" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.KafkaServer" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_readConfig" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_getWordCounts" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_getConnectionString" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_dbConnector" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.KafkaServer" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MySQLDB" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.songs" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_dbConnector" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_getConnectionString" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_readConfig" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestDbConnector.test_getWordCounts" />
+        <item index="4" class="java.lang.String" itemvalue="Python.KafkaServer" />
       </list>
     </recent_temporary>
   </component>
@@ -565,20 +568,25 @@
       <created>1402273935302</created>
       <updated>1402273935302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed output to json">
+      <created>1403031072051</created>
+      <updated>1403031072051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19270833" sideWeight="0.78880155" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39803922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19270833" sideWeight="0.78880155" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3975678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21047708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -611,10 +619,150 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="19" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1122">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="107" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1122">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="107" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1122">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="107" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1122">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HelloWorld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="107" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
@@ -625,7 +773,9 @@
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="986">
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +796,9 @@
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="33" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1173">
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,7 +812,9 @@
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,14 +835,18 @@
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="19" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="1122">
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1020">
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -709,7 +867,9 @@
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="850">
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,31 +927,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+        <state line="12" column="35" selection-start="433" selection-end="433" vertical-scroll-proportion="0.17475729" vertical-offset="96" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/utrunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1411">
+        <state line="150" column="0" selection-start="4608" selection-end="4608" vertical-scroll-proportion="0.8074434" vertical-offset="2017" max-vertical-offset="2635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/tcunittest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+        <state line="201" column="0" selection-start="6655" selection-end="6655" vertical-scroll-proportion="0.8074434" vertical-offset="2850" max-vertical-offset="3468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="2499" selection-end="2499" vertical-scroll-proportion="0.33333334" vertical-offset="1205" max-vertical-offset="5559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="791" column="51" selection-start="29743" selection-end="29816" vertical-scroll-proportion="0.33251834" vertical-offset="12954" max-vertical-offset="23681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/mysql/connector/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="553" column="0" selection-start="19549" selection-end="19549" vertical-scroll-proportion="0.33251834" vertical-offset="8874" max-vertical-offset="25245">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KafkaRestServer/KafkaServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.4022005" vertical-offset="62" max-vertical-offset="1122">
+        <state line="33" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.4804401" vertical-offset="168" max-vertical-offset="1241">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/songs/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.76770186" vertical-offset="368" max-vertical-offset="1411">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="116" selection-end="145" vertical-scroll-proportion="0.16625917" vertical-offset="0" max-vertical-offset="818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_dbConnector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="30" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.63080686" vertical-offset="623" max-vertical-offset="1666">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1409267963672" expanded="true" signature="-1:-1" placeholder="SELECT word,..words..." />
+            <marker date="1409267963672" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1409267963672" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+            <marker date="1409267963672" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1409267963672" expanded="true" signature="-1:-1" placeholder="Delete From ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaRestServer/MySQLDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.27017114" vertical-offset="0" max-vertical-offset="818">
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

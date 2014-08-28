@@ -16,21 +16,24 @@ class wordCount():
 
 class Words:
 
+    def __init__(self,config):
+        self.config = config
+
     exposed = True
     @cherrypy.tools.json_out()
     def GET(self):
 
 
-        db = dbConnector()
+        db = dbConnector(config)
         words = db.getWordCounts()
 
         output = []
         for k in words.keys():
             wo = {'word':k,'count':words[k]}
-            output.append(wo);
+            output.append(wo)
 
         # return (', '.join(output))
-        cherrypy.response.headers["Access-Control-Allow-Origin"] = "*";
+        cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
 
         return(json.dumps(output))
 
@@ -41,17 +44,17 @@ def CORS():
 
 if __name__ == '__main__':
 
+    config = configparser.ConfigParser()
+    config.read('application.ini')
+    env = config['environment']['env']
+
     cherrypy.tree.mount(
-        Words(), '/api/words',
+        Words(config), '/api/words',
         {'/':
             {'request.dispatch': cherrypy.dispatch.MethodDispatcher()}
         }
     )
 
-
-    config = configparser.ConfigParser()
-    config.read('application.ini')
-    env = config['environment']['env']
 
     cherrypy.server.socket_port = int(config[env]['port'])
     #cherrypy.server.httpserver = 'kafkaserver.cloudapp.net'
